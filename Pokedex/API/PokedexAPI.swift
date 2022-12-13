@@ -21,7 +21,7 @@ class PokedexAPI {
     func getDetailsPokemon(url: String, _ completion: @escaping (DetailsPokemonModel?) -> Void) {
         let api = Services()
         api.request(url) { (result: DetailsPokemonModel?, erro) in
-            completion(result )
+            completion(result)
         }
     }
 }
